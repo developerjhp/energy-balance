@@ -89,9 +89,14 @@ p {
   padding: 2px 0;
   font-weight: bold;
   font-size: 15px;
+  display: flex;
   span {
     margin-right: 5px;
     float: right;
+  }
+  .score {
+    width: 100px;
+    margin-left: auto;
   }
   &:hover {
     background-color: aquamarine;

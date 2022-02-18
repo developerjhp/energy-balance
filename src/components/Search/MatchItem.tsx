@@ -15,9 +15,9 @@ function MatchItem({ setInput, order, matchItem }: Props) {
     <>
       <div className='item-name' onClick={onClickHandler}>
         {matchItem.product_name}{' '}
-        <span>
-          {order}:{matchItem.repurchase_rate}
-        </span>
+        <div className='score'>
+          {order}:{order === '재구매율' ? matchItem.repurchase_rate : matchItem.grade}
+        </div>
       </div>
     </>
   );

@@ -1,8 +1,11 @@
-import React, { Dispatch, useCallback, useEffect, forwardRef } from 'react';
+import React, { Dispatch, useCallback, forwardRef } from 'react';
+import { dataFilter } from 'utils/functions/dataFilter';
+import { dataSortingSlice } from 'utils/functions/dataSortingSlice';
 import { dbArr } from 'types/db';
 
 interface Props {
   data: dbArr;
+  order: string;
   input: string;
   setInput: Dispatch<any>;
   inputFocused: boolean;
@@ -12,32 +15,32 @@ interface Props {
   matches: dbArr;
   setMatches: Dispatch<any>;
 }
-const SearchInput = forwardRef<HTMLInputElement, Props>(({ data, input, setInput, inputFocused, setInputFocused, searched, setSearched, matches, setMatches }, ref) => {
+const SearchInput = forwardRef<HTMLInputElement, Props>(({ order, data, input, setInput, inputFocused, setInputFocused, searched, setSearched, matches, setMatches }, ref) => {
   const onChangeHandler = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setInput(e.target.value);
-      console.log(input);
-      setMatches([
-        ...data.filter((item) => {
-          const regex = new RegExp(e.target.value, 'gi');
-          return item.product_name.match(regex);
-        }),
-      ]);
+      let match: dbArr = dataFilter(data, e.target.value);
+      if (match.length === 0) {
+        setMatches([...dataSortingSlice(data, order)]);
+      } else {
+        setMatches([...dataSortingSlice(match, order)]);
+      }
     },
-    [input]
+    [data, setInput, setMatches]
   );
+
   const submitHandler = (e: React.FormEvent) => {
     e.preventDefault();
     if (input.length !== 0) {
-      setSearched([...searched, input]);
+      setSearched([input, ...searched.filter((item) => item !== input).slice(0, 4)]);
       setInput('');
     }
+    setInputFocused(true);
   };
 
   const focusInput = useCallback(() => {
     setInputFocused(true);
-    console.log(inputFocused);
-  }, [inputFocused]);
+  }, [setInputFocused]);
   return (
     <div className='search-input-container'>
       <form onSubmit={submitHandler}>

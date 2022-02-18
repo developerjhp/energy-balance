@@ -48,3 +48,9 @@
     visibility: visible;
   }
 }
+
+.item-name {
+  &:hover {
+    background-color: aquamarine;
+  }
+}

@@ -14,17 +14,16 @@ function ItemList({ inputFocused, searched, matches }: Props) {
   return (
     <div className={'item-list' + (inputFocused ? ' active' : '')}>
       <p>최근 검색어</p>
-      <ul>
-        {searched.map((item) => {
-          return <Searched key={item} searchedName={item} />;
-        })}
-      </ul>
-      <p>일치하는 제품</p>
-      <ul>
-        {matches.map((item) => {
-          return <MatchItem key={item.id} matchItem={item} />;
-        })}
-      </ul>
+
+      {searched.map((item) => {
+        return <Searched key={item} searchedName={item} />;
+      })}
+
+      <p>일치하는 제품(재구매 비율 순서)</p>
+
+      {matches.map((item) => {
+        return <MatchItem key={item.id} matchItem={item} />;
+      })}
     </div>
   );
 }

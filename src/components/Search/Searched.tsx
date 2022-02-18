@@ -4,7 +4,7 @@ interface Props {
 function Searched({ searchedName }: Props) {
   return (
     <>
-      <li className='searched-item'>{searchedName}</li>
+      <div className='item-name'>{searchedName}</div>
     </>
   );
 }

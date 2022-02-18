@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import axios from 'axios';
 import { db, dbArr } from 'types/db';
@@ -11,7 +11,7 @@ function Search() {
   const [searched, setSearched] = useState<string[]>([]);
   const [matches, setMatches] = useState<dbArr>([]);
   const [related, setRelated] = useState<dbArr>([]);
-
+  const [order, setOrder] = useState<string>('재구매율');
   const [inputFocused, setInputFocused] = useState(false);
   const [input, setInput] = useState<string>('');
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -58,6 +58,7 @@ function Search() {
     <div className='search-tool'>
       <SearchInput
         ref={inputRef}
+        order={order}
         data={data}
         inputFocused={inputFocused}
         setInputFocused={setInputFocused}
@@ -68,7 +69,7 @@ function Search() {
         matches={matches}
         setMatches={setMatches}
       />
-      <ItemList inputFocused={inputFocused} searched={searched} matches={matches} />
+      <ItemList order={order} data={data} inputFocused={inputFocused} searched={searched} matches={matches} setInput={setInput} setMatches={setMatches} />
     </div>
   );
 }

@@ -4,23 +4,14 @@ import { dataSortingSlice } from 'utils/functions/dataSortingSlice';
 import { dbArr } from 'types/db';
 import ItemList from 'components/Search/ItemList';
 import { useEffect } from 'react';
-interface Props {
-  data: dbArr;
-  order: string;
-  setOrder: Dispatch<any>;
-  input: string;
-  setInput: Dispatch<any>;
+import { Props } from 'types/props';
 
-  inputFocused: boolean;
-  setInputFocused: Dispatch<any>;
-  searched: string[];
-  setSearched: Dispatch<any>;
-  matches: dbArr;
-  setMatches: Dispatch<any>;
-}
 const SearchInput = forwardRef<HTMLInputElement, Props>(({ order, setOrder, data, input, setInput, inputFocused, setInputFocused, searched, setSearched, matches, setMatches }, ref) => {
   const onChangeHandler = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (!inputFocused) {
+        setInputFocused(true);
+      }
       setInput(e.target.value);
       let match: dbArr = dataFilter(data, e.target.value);
       if (match.length === 0) {
@@ -53,7 +44,19 @@ const SearchInput = forwardRef<HTMLInputElement, Props>(({ order, setOrder, data
           </button>
         </div>
       </form>
-      <ItemList order={order} setOrder={setOrder} data={data} input={input} inputFocused={inputFocused} searched={searched} matches={matches} setInput={setInput} setMatches={setMatches} />
+      <ItemList
+        setInputFocused={setInputFocused}
+        setSearched={setSearched}
+        order={order}
+        setOrder={setOrder}
+        data={data}
+        input={input}
+        inputFocused={inputFocused}
+        searched={searched}
+        matches={matches}
+        setInput={setInput}
+        setMatches={setMatches}
+      />
     </div>
   );
 });

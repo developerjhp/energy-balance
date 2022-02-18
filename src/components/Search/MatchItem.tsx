@@ -7,7 +7,9 @@ interface Props {
 function MatchItem({ matchItem }: Props) {
   return (
     <>
-      <div className='item-name'>{matchItem.product_name}</div>
+      <div>
+        {matchItem.product_name} <span>{matchItem.repurchase_rate}</span>
+      </div>
     </>
   );
 }

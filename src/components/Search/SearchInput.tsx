@@ -29,6 +29,7 @@ const SearchInput = forwardRef<HTMLInputElement, Props>(({ order, setOrder, data
       setSearched([input, ...searched.filter((item) => item !== input).slice(0, 4)]);
     }
     setInputFocused(false);
+    window.location.href = `/search?=${input}`;
   };
 
   const focusInput = useCallback(() => {

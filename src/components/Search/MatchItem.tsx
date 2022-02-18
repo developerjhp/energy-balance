@@ -10,6 +10,7 @@ interface Props {
 function MatchItem({ setInput, order, matchItem }: Props) {
   const onClickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
     setInput(matchItem.product_name);
+    window.location.href = `/search?=${matchItem.product_name}`;
   };
   return (
     <>

@@ -21,6 +21,7 @@ function Searched({ order, data, searchedName, setInput, setMatches }: Props) {
     } else {
       setMatches([...dataSortingSlice(match, order)]);
     }
+    window.location.href = `/search?=${searchedName}`;
   };
   return (
     <>

@@ -24,7 +24,7 @@ function Searched({ order, data, searchedName, setInput, setMatches }: Props) {
   };
   return (
     <>
-      <div className='searched-item' onClick={onClickHandler}>
+      <div className='item-name' onClick={onClickHandler}>
         {searchedName}
       </div>
     </>

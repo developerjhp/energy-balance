@@ -1,1 +1,1 @@
-export const order = ['평점', '재구매율'];
+export const orderCondition = ['평점', '재구매율'];

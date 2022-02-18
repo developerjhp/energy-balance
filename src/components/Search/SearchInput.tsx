@@ -20,7 +20,7 @@ const SearchInput = forwardRef<HTMLInputElement, Props>(({ order, setOrder, data
         setMatches([...dataSortingSlice(match, order)]);
       }
     },
-    [order, data, setInput, setMatches]
+    [order, data, setInput, setMatches, inputFocused, setInputFocused]
   );
 
   const submitHandler = (e: React.FormEvent) => {

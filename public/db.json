@@ -1,103 +1,796 @@
 {
   "data": [
-    { "id": 1, "product_name": "6년근고려홍삼정스틱", "brand": "고려홍삼정", "grade": 4.0, "repurchase_rate": 0.9, "related": ["커트 큐브", "비타민D 1000IU"]},
-    { "id": 2, "product_name": "마그네슘정", "brand": "닥터피엔티", "grade": 4.2, "repurchase_rate": 0.88, "related": ["6년근고려홍삼정스틱", "비타민D 키즈"] },
-    { "id": 3, "product_name": "비타민D 1000IU", "brand": "솔가", "grade": 4.6, "repurchase_rate": 0.3, "related": ["비타민D 1080 IU", "비타민D 키즈"] },
-    { "id": 4, "product_name": "커트 큐브", "brand": "아모레퍼시픽", "grade": 4.0, "repurchase_rate": 0.8, "related": ["6년근고려홍삼정스틱", "마그네슘정"] },
-    { "id": 5, "product_name": "코코몽키즈오메가", "brand": "일양약품", "grade": 4.9, "repurchase_rate": 0.92, "related": ["커트 큐브", "비타민D 키즈"] },
-    { "id": 6, "product_name": "오메가써큐텐 ", "brand": "엘로스바이오", "grade": 4.8, "repurchase_rate": 0.71, "related": ["오메가3", "콜레스테롤"] },
-    { "id": 7, "product_name": "초임계 알티지 오메가3", "brand": "닥터린", "grade": 4.7, "repurchase_rate": 0.95, "related": ["오메가3", "초임계"] },
-    { "id": 8, "product_name": "시트루 아르기닌", "brand": "피토틱스", "grade": 4.8, "repurchase_rate": 0.81, "related": ["아르기닌", "시트룰린"] },
-    { "id": 9, "product_name": "락토 리얼 포스트바이오틱스", "brand": "하루웰빙", "grade": 4.8, "repurchase_rate": 0.51, "related": ["생유산균", "프롤린"] },
-    { "id": 10, "product_name": "프로바이오틱스 생 유산균", "brand": "지웨이", "grade": 4.7, "repurchase_rate": 0.45, "related": ["신바이오틱스", "유산균"] },
-    { "id": 11, "product_name": "식물성 알티지 오메가3 DHA 맥스", "brand": "더리얼", "grade": 4.9, "repurchase_rate": 0.97, "related": ["식물성", "오메가3"] },
-    { "id": 12, "product_name": "피토틱스 옐로우", "brand": "피토틱스", "grade": 4.7, "repurchase_rate": 0.63, "related": ["아연", "유산균"] },
-    { "id": 13, "product_name": "멀티비타민 앤 미네랄", "brand": "에버그린", "grade": 4.8, "repurchase_rate": 0.23, "related": ["멀티비타민", "종합비타민"] },
-    { "id": 14, "product_name": "초임계 식물성 알티지 오메가3", "brand": "유유제약", "grade": 4.9, "repurchase_rate": 0.89, "related": ["식물성", "눈건강"] },
-    { "id": 15, "product_name": "멀티비타민 미네랄", "brand": "팜엔탑", "grade": 4.7, "repurchase_rate": 0.55, "related": ["미네랄", "종합비타민"] },
-    { "id": 16, "product_name": "하이퍼맥스 L 아르기닌", "brand": "랩온랩", "grade": 4.8, "repurchase_rate": 0.86, "related": ["아르기닌", "고함량"] },
-    { "id": 17, "product_name": "프리미엄 대마종자유", "brand": "팜엔탑", "grade": 4.7, "repurchase_rate": 0.54, "related": ["미네랄", "종합비타민"] },
-    { "id": 18, "product_name": "멀티비타민 미네랄", "brand": "멜로우네이쳐", "grade": 4.9, "repurchase_rate": 0.94, "related": ["햄프시드", "다이어트"] },
-    { "id": 19, "product_name": "코어 알티지 오메가3", "brand": "머거요", "grade": 4.9, "repurchase_rate": 0.68, "related": ["장용성", "오메가3"] },
-    { "id": 20, "product_name": "생유산균 골드", "brand": "락토핏", "grade": 4.8, "repurchase_rate": 0.65, "related": ["유산균", "프로바이오틱스"] },
-    { "id": 21, "product_name": "핑크 프로바이오틱스", "brand": "프로스랩", "grade": 4.7, "repurchase_rate": 0.75, "related": ["여성 유산균", "질건강"] },
-    { "id": 22, "product_name": "종합비타민 멀티미네랄15", "brand": "고철남헬스케어", "grade": 4.7, "repurchase_rate": 0.41, "related": ["종합비타민", "멀티비타민"] },
-    { "id": 23, "product_name": "리얼트루 식물성 오메가3", "brand": "뉴네이처", "grade": 4.8, "repurchase_rate": 0.87, "related": ["식물성", "오메가3"] },
-    { "id": 24, "product_name": "코어 대마종자유 햄프씨드 오일", "brand": "머거요", "grade": 4.9, "repurchase_rate": 0.33, "related": ["대마종자유", "햄프씨드"] },
-    { "id": 25, "product_name": "알티지 오메가3 파워 1400", "brand": "뉴네이처", "grade": 4.8, "repurchase_rate": 0.92, "related": ["오메가3", "초임계"] },
-    { "id": 26, "product_name": "센스밸런스", "brand": "유한양행", "grade": 4.8, "repurchase_rate": 0.72, "related": ["여성맞춤영양제", "멀티"] },
-    { "id": 27, "product_name": "더다른 식물성 알티지 오메가3", "brand": "닥터프리오", "grade": 4.7, "repurchase_rate": 0.84, "related": ["임산부", "오메가3"] },
-    { "id": 28, "product_name": "브레인 업 안심 포스파티딜세린", "brand": "모어네이처", "grade": 4.7, "repurchase_rate": 0.24, "related": ["두뇌", "인지력"] },
-    { "id": 29, "product_name": "마이시톨", "brand": "마이시톨", "grade": 4.8, "repurchase_rate": 0.25, "related": ["이노시톨", "비타민B"] },
-    { "id": 30, "product_name": "베베 & 키즈 우리아이 멀티비타민 ", "brand": "락티브", "grade": 4.8, "repurchase_rate": 0.42, "related": ["영양보충", "비타민B6"] },
-    { "id": 31, "product_name": "더블유 프로바이오틱스", "brand": "퍼펙트바이오틱스", "grade": 4.7, "repurchase_rate": 0.53, "related": ["장건강", "질유래"] },
-    { "id": 32, "product_name": "아르기닌 10000", "brand": "비타민마을", "grade": 4.8, "repurchase_rate": 0.56, "related": ["분말스틱", "고함량"] },
-    { "id": 33, "product_name": "식물성 대마종자유", "brand": "모어네이처", "grade": 4.8, "repurchase_rate": 0.61, "related": ["임산부", "햄프씨드"] },
-    { "id": 34, "product_name": "대마종자유 프리미엄", "brand": "오지아이", "grade": 4.7, "repurchase_rate": 0.72, "related": ["햄프씨드", "오일"] },
-    { "id": 35, "product_name": "덴마크 유산균 이야기", "brand": "덴프스", "grade": 4.7, "repurchase_rate": 0.83, "related": ["장건강", "신애라"] },
-    { "id": 36, "product_name": "바이탈 프리미엄 프로바이오틱스 유산균", "brand": "뉴네이처", "grade": 4.8, "repurchase_rate": 0.94, "related": ["장건강영양소", "모유"] },
-    { "id": 37, "product_name": "감태잠태", "brand": "온궁민건강프로젝트", "grade": 4.4, "repurchase_rate": 0.21, "related": ["수면질", "숙면"] },
-    { "id": 38, "product_name": "이뮨 프로바이오틱스", "brand": "퍼펙트바이오틱스", "grade": 4.9, "repurchase_rate": 0.32, "related": ["장건강", "아연"] },
-    { "id": 39, "product_name": "프리미엄 초유 단백질 콜라겐 분말", "brand": "멜로우네이쳐", "grade": 4.9, "repurchase_rate": 0.43, "related": ["단백질", "콜라겐"] },
-    { "id": 40, "product_name": "퓨어 알티지 오메가3", "brand": "유유제약", "grade": 4.8, "repurchase_rate": 0.54, "related": ["눈건강", "오메가3"] },
-    { "id": 41, "product_name": "생유산균 코어", "brand": "락토핏", "grade": 4.7, "repurchase_rate": 0.65, "related": ["장건강", "유산균"] },
-    { "id": 42, "product_name": "베이비 프로바이오틱스 프리미엄", "brand": "프로스랩", "grade": 4.7, "repurchase_rate": 0.76, "related": ["장건강", "유산균"] },
-    { "id": 43, "product_name": "포스트바이오틱스", "brand": "뉴네이처", "grade": 4.8, "repurchase_rate": 0.87, "related": ["장건강", "셀레늄"] },
-    { "id": 44, "product_name": "멀티비타민 올인원", "brand": "고려은단", "grade": 4.8, "repurchase_rate": 0.98, "related": ["영양보충", "비타민C"] },
-    { "id": 45, "product_name": "관절엔 콘드로이친", "brand": "콜마비앤에이치", "grade": 4.7, "repurchase_rate": 0.10, "related": ["관절", "뼈건강"] },
-    { "id": 46, "product_name": "알티지 트루 오메가3", "brand": "비타민마을", "grade": 4.8, "repurchase_rate": 0.21, "related": ["눈건강", "오메가3"] },
-    { "id": 47, "product_name": "어린이면역 프로바이오틱스 유산균", "brand": "바료랑", "grade": 4.8, "repurchase_rate": 0.32, "related": ["장건강", "비타민D"] },
-    { "id": 48, "product_name": "위건강엔 매스틱", "brand": "프롬바이오", "grade": 4.7, "repurchase_rate": 0.43, "related": ["장건강", "위건강"] },
-    { "id": 49, "product_name": "헤모힘", "brand": "애터미", "grade": 4.8, "repurchase_rate": 0.54, "related": ["면연력", "비타민C"] },
-    { "id": 50, "product_name": "포스트바이오틱스 프로바이오틱스 생 유산균", "brand": "팜엔탑", "grade": 4.6, "repurchase_rate": 0.65, "related": ["장건강", "아연"] },
-    { "id": 51, "product_name": "편안한 34종 자연발효 곡물효소 유산균", "brand": "우리유산균", "grade": 4.7, "repurchase_rate": 0.76, "related": ["비타민D", "아연"] },
-    { "id": 52, "product_name": "키즈 멀티비타민 미네랄", "brand": "뉴트리코어", "grade": 4.7, "repurchase_rate": 0.87, "related": ["망간", "엽산"] },
-    { "id": 53, "product_name": "프롤린 모유 생유산균 포스트바이오틱스", "brand": "순수식품", "grade": 4.6, "repurchase_rate": 0.98, "related": ["모유", "유산균"] },
-    { "id": 54, "product_name": "네이처락 포스트 바이오틱스 메가", "brand": "팔레오", "grade": 4.7, "repurchase_rate": 0.11, "related": ["장건강", "유산균"] },
-    { "id": 55, "product_name": "콜린 이노시톨", "brand": "피토틱스", "grade": 4.8, "repurchase_rate": 0.22, "related": ["수소콜린", "비타민B"] },
-    { "id": 56, "product_name": "인지력에 좋은 포스파티딜세린", "brand": "팜엔탑", "grade": 4.7, "repurchase_rate": 0.33, "related": ["기억력개선", "식이섬유"] },
-    { "id": 57, "product_name": "락티움 플러스", "brand": "온궁민건강프로젝트", "grade": 4.5, "repurchase_rate": 0.05, "related": ["망간", "긴장완화"] },
-    { "id": 58, "product_name": "멀티비타민미네랄", "brand": "포뉴", "grade": 4.8, "repurchase_rate": 0.44, "related": ["영양보충", "비타민D"] },
-    { "id": 59, "product_name": "패밀리 프로바이오틱스 프리미엄", "brand": "프로스랩", "grade": 4.7, "repurchase_rate": 0.55, "related": ["장건강", "유산균"] },
-    { "id": 60, "product_name": "위 건강엔 헬리코박터 컨트롤", "brand": "팜엔탑", "grade": 4.6, "repurchase_rate": 0.66, "related": ["위건강", "비타민C"] },
-    { "id": 61, "product_name": "포스트바이오틱스 100억 패밀리 프로바이오틱스 유산균", "brand": "포뉴", "grade": 4.8, "repurchase_rate": 0.77, "related": ["장건강", "임산부"] },
-    { "id": 62, "product_name": "엠비피 MBP", "brand": "뼈엔", "grade": 4.7, "repurchase_rate": 0.88, "related": ["유단백", "뼈건강"] },
-    { "id": 63, "product_name": "알티지오메가3", "brand": "익스트림", "grade": 4.9, "repurchase_rate": 0.99, "related": ["눈건강", "오메가3"] },
-    { "id": 64, "product_name": "L-아르기닌", "brand": "해외나우푸드", "grade": 4.8, "repurchase_rate": 0.14, "related": ["영양보충", "1000mg"] },
-    { "id": 65, "product_name": "WCS 햄프 대마종자유", "brand": "뉴트리코어", "grade": 4.7, "repurchase_rate": 0.25, "related": ["햄프씨드", "대마종자유"] },
-    { "id": 66, "product_name": "슬림 프로바이오틱스", "brand": "프로스랩", "grade": 4.5, "repurchase_rate": 0.04, "related": ["체지방 감소", "식이섬유"] },
-    { "id": 67, "product_name": "더맘스", "brand": "뉴트리코어", "grade": 4.7, "repurchase_rate": 0.36, "related": ["셀레늄", "크롬"] },
-    { "id": 68, "product_name": "생유산균 로얄", "brand": "락토핏", "grade": 4.8, "repurchase_rate": 0.47, "related": ["장건강", "유산균"] },
-    { "id": 69, "product_name": "포스파티딜세린+징코", "brand": "더리얼", "grade": 4.8, "repurchase_rate": 0.58, "related": ["비타민E", "기억력 개선"] },
-    { "id": 70, "product_name": "기억엔", "brand": "온궁민건강프로젝트", "grade": 4.5, "repurchase_rate": 0.43, "related": ["기억력 개선", "집중력"] },
-    { "id": 71, "product_name": "알티지 오메가3 듀얼", "brand": "프로메가", "grade": 4.8, "repurchase_rate": 0.69, "related": ["비타민E", "혈행개선"] },
-    { "id": 72, "product_name": "트루바이타민", "brand": "덴프스", "grade": 4.8, "repurchase_rate": 0.70, "related": ["비타민B6", "비타민C"] },
-    { "id": 74, "product_name": "자로우 매스틱 검", "brand": "재로우포뮬러스", "grade": 4.8, "repurchase_rate": 0.81, "related": ["재로우", "포뮬러스"] },
-    { "id": 75, "product_name": "리본 프로바이오틱스", "brand": "닥터힐유", "grade": 4.7, "repurchase_rate": 0.92, "related": ["질건강", "아연"] },
-    { "id": 76, "product_name": "식물성 알티지 오메가3", "brand": "뉴트리코어", "grade": 4.7, "repurchase_rate": 0.23, "related": ["혈행개선", "식물성"] },
-    { "id": 77, "product_name": "수면건강엔 락티움 플러스", "brand": "프롬바이오", "grade": 4.5, "repurchase_rate": 0.34, "related": ["수면질 개선", "판토텐산"] },
-    { "id": 78, "product_name": "이뮨", "brand": "해외오쏘몰", "grade": 4.8, "repurchase_rate": 0.45, "related": ["비타민D", "비타민A"] },
-    { "id": 79, "product_name": "더블케어 발효 효소", "brand": "비타민마을", "grade": 4.8, "repurchase_rate": 0.56, "related": ["프로테아제", "아밀라아제"] },
-    { "id": 80, "product_name": "지노 마스터", "brand": "마스터바이옴", "grade": 4.7, "repurchase_rate": 0.67, "related": ["질건강", "유산균"] },
-    { "id": 81, "product_name": "헤브리데이 누룽지 곡물발효 헤브효소", "brand": "휴엔바이오", "grade": 4.9, "repurchase_rate": 0.78, "related": ["효소식품", "유산균"] },
-    { "id": 82, "product_name": "엘레나 UREX 프로바이오틱스", "brand": "유한양행", "grade": 4.8, "repurchase_rate": 0.81, "related": ["질건강", "유산균"] },
-    { "id": 83, "product_name": "아르맨 L-아르기닌", "brand": "웰릿", "grade": 4.6, "repurchase_rate": 0.37, "related": ["고함량", "활력"] },
-    { "id": 84, "product_name": "수면엔 락티움", "brand": "뉴트리코어", "grade": 4.5, "repurchase_rate": 0.27, "related": ["수면질 개선", "보조제"] },
-    { "id": 85, "product_name": "유어피엔티 위 건강", "brand": "잠백이", "grade": 4.8, "repurchase_rate": 0.34, "related": ["위건강", "금은화"] },
-    { "id": 86, "product_name": "다이어트 유산균", "brand": "비에날씬", "grade": 4.7, "repurchase_rate": 0.49, "related": ["장건강", "유산균"] },
-    { "id": 87, "product_name": "포맨 멀티 비타민 미네랄", "brand": "센트룸", "grade": 4.8, "repurchase_rate": 0.74, "related": ["영양보충", "비타민D"] },
-    { "id": 88, "product_name": "이노시톨 98%", "brand": "순수식품", "grade": 4.9, "repurchase_rate": 0.59, "related": ["엽산", "비타민6종"] },
-    { "id": 89, "product_name": "얼라이브 원스데일리 포 우먼", "brand": "네츄럴라이프얼라이브", "grade": 4.8, "repurchase_rate": 0.93, "related": ["영양보충", "비타민A"] },
-    { "id": 90, "product_name": "멀티 구미", "brand": "센트룸", "grade": 4.9, "repurchase_rate": 0.86, "related": ["영양보충", "비타민E"] },
-    { "id": 91, "product_name": "위 건강엔 작약", "brand": "뉴트리코어", "grade": 4.7, "repurchase_rate": 0.41, "related": ["위건강", "작약"] },
-    { "id": 92, "product_name": "알티지 오메가3 시그니처", "brand": "미완성프로젝트", "grade": 4.8, "repurchase_rate": 0.52, "related": ["임산부", "혈행개선"] },
-    { "id": 93, "product_name": "닥터스노트 슈퍼플러스 홍국 알티지", "brand": "팔레오", "grade": 5, "repurchase_rate": 0.87, "related": ["혈행개선", "비타민D"] },
-    { "id": 94, "product_name": "실버 포 우먼 멀티비타민 미네랄", "brand": "센트룸", "grade": 4.8, "repurchase_rate": 0.92, "related": ["영양보충", "비타민D"] },
-    { "id": 95, "product_name": "마이크로바이옴 포스트바이오틱스", "brand": "GC녹십자", "grade": 4.7, "repurchase_rate": 0.86, "related": ["장건강", "유산균"] },
-    { "id": 96, "product_name": "관절통쾌", "brand": "종근당건강", "grade": 4.8, "repurchase_rate": 0.75, "related": ["관절", "뼈"] },
-    { "id": 97, "product_name": "관절팔팔", "brand": "씨스팡", "grade": 4.7, "repurchase_rate": 0.54, "related": ["관절", "뼈"] },
-    { "id": 98, "product_name": "초유 단백질", "brand": "팔레오", "grade": 4.7, "repurchase_rate": 0.49, "related": ["초유", "단백질"] },
-    { "id": 99, "product_name": "튼튼애 콘드로이친", "brand": "마음가짐", "grade": 4.7, "repurchase_rate": 0.38, "related": ["칼슘", "비타민D3"] },
-    { "id": 100, "product_name": "딥슬립 락티움", "brand": "닥터린", "grade": 4.6, "repurchase_rate": 0.27, "related": ["수면질 개선", "락티움"] }
+    {
+      "id": 1,
+      "product_name": "6년근고려홍삼정스틱",
+      "brand": "고려홍삼정",
+      "grade": 4,
+      "repurchase_rate": 0.9,
+      "related": ["생유산균 코어", "멀티비타민 올인원"]
+    },
+    {
+      "id": 2,
+      "product_name": "마그네슘정",
+      "brand": "닥터피엔티",
+      "grade": 4.2,
+      "repurchase_rate": 0.88,
+      "related": ["6년근고려홍삼정스틱", "멀티비타민 미네랄"]
+    },
+    {
+      "id": 3,
+      "product_name": "비타민D 1000IU",
+      "brand": "솔가",
+      "grade": 4.6,
+      "repurchase_rate": 0.3,
+      "related": ["시트루 아르기닌", "슬림 프로바이오틱스"]
+    },
+    {
+      "id": 4,
+      "product_name": "커트 큐브",
+      "brand": "아모레퍼시픽",
+      "grade": 4,
+      "repurchase_rate": 0.8,
+      "related": ["인지력에 좋은 포스파티딜세린", "마그네슘정"]
+    },
+    {
+      "id": 5,
+      "product_name": "코코몽키즈오메가",
+      "brand": "일양약품",
+      "grade": 4.9,
+      "repurchase_rate": 0.92,
+      "related": ["대마종자유 프리미엄", "딥슬립 락티움"]
+    },
+    {
+      "id": 6,
+      "product_name": "오메가써큐텐 ",
+      "brand": "엘로스바이오",
+      "grade": 4.8,
+      "repurchase_rate": 0.71,
+      "related": ["리얼트루 식물성 오메가3", "멀티비타민 올인원"]
+    },
+    {
+      "id": 7,
+      "product_name": "초임계 알티지 오메가3",
+      "brand": "닥터린",
+      "grade": 4.7,
+      "repurchase_rate": 0.95,
+      "related": ["시트루 아르기닌", "멀티비타민 올인원"]
+    },
+    {
+      "id": 8,
+      "product_name": "시트루 아르기닌",
+      "brand": "피토틱스",
+      "grade": 4.8,
+      "repurchase_rate": 0.81,
+      "related": ["마이시톨", "패밀리 프로바이오틱스 프리미엄"]
+    },
+    {
+      "id": 9,
+      "product_name": "락토 리얼 포스트바이오틱스",
+      "brand": "하루웰빙",
+      "grade": 4.8,
+      "repurchase_rate": 0.51,
+      "related": ["알티지 오메가3 파워 1400", "멀티비타민 올인원"]
+    },
+    {
+      "id": 10,
+      "product_name": "프로바이오틱스 생 유산균",
+      "brand": "지웨이",
+      "grade": 4.7,
+      "repurchase_rate": 0.45,
+      "related": ["패밀리 프로바이오틱스 프리미엄", "이뮨"]
+    },
+    {
+      "id": 11,
+      "product_name": "식물성 알티지 오메가3 DHA 맥스",
+      "brand": "더리얼",
+      "grade": 4.9,
+      "repurchase_rate": 0.97,
+      "related": ["센스밸런스", "초유 단백질"]
+    },
+    {
+      "id": 12,
+      "product_name": "피토틱스 옐로우",
+      "brand": "피토틱스",
+      "grade": 4.7,
+      "repurchase_rate": 0.63,
+      "related": ["베베 & 키즈 우리아이 멀티비타민 ", "알티지 오메가3 시그니처"]
+    },
+    {
+      "id": 13,
+      "product_name": "멀티비타민 앤 미네랄",
+      "brand": "에버그린",
+      "grade": 4.8,
+      "repurchase_rate": 0.23,
+      "related": ["기억엔", "닥터스노트 슈퍼플러스 홍국 알티지"]
+    },
+    {
+      "id": 14,
+      "product_name": "초임계 식물성 알티지 오메가3",
+      "brand": "유유제약",
+      "grade": 4.9,
+      "repurchase_rate": 0.89,
+      "related": ["포맨 멀티 비타민 미네랄", "더블케어 발효 효소"]
+    },
+    {
+      "id": 15,
+      "product_name": "멀티비타민 미네랄",
+      "brand": "팜엔탑",
+      "grade": 4.7,
+      "repurchase_rate": 0.55,
+      "related": ["포맨 멀티 비타민 미네랄", "딥슬립 락티움"]
+    },
+    {
+      "id": 16,
+      "product_name": "하이퍼맥스 L 아르기닌",
+      "brand": "랩온랩",
+      "grade": 4.8,
+      "repurchase_rate": 0.86,
+      "related": ["헤브리데이 누룽지 곡물발효 헤브효소", "포스트바이오틱스 프로바이오틱스 생 유산균"]
+    },
+    {
+      "id": 17,
+      "product_name": "프리미엄 대마종자유",
+      "brand": "팜엔탑",
+      "grade": 4.7,
+      "repurchase_rate": 0.54,
+      "related": ["식물성 알티지 오메가3 DHA 맥스", "알티지오메가3"]
+    },
+    {
+      "id": 18,
+      "product_name": "멀티비타민 미네랄",
+      "brand": "멜로우네이쳐",
+      "grade": 4.9,
+      "repurchase_rate": 0.94,
+      "related": ["알티지 오메가3 시그니처", "엠비피 MBP"]
+    },
+    {
+      "id": 19,
+      "product_name": "코어 알티지 오메가3",
+      "brand": "머거요",
+      "grade": 4.9,
+      "repurchase_rate": 0.68,
+      "related": ["포스트바이오틱스 프로바이오틱스 생 유산균", "프로바이오틱스 생 유산균"]
+    },
+    {
+      "id": 20,
+      "product_name": "생유산균 골드",
+      "brand": "락토핏",
+      "grade": 4.8,
+      "repurchase_rate": 0.65,
+      "related": ["위 건강엔 헬리코박터 컨트롤", "바이탈 프리미엄 프로바이오틱스 유산균"]
+    },
+    {
+      "id": 21,
+      "product_name": "핑크 프로바이오틱스",
+      "brand": "프로스랩",
+      "grade": 4.7,
+      "repurchase_rate": 0.75,
+      "related": ["기억엔", "멀티비타민 앤 미네랄"]
+    },
+    {
+      "id": 22,
+      "product_name": "종합비타민 멀티미네랄15",
+      "brand": "고철남헬스케어",
+      "grade": 4.7,
+      "repurchase_rate": 0.41,
+      "related": ["알티지오메가3", "락토 리얼 포스트바이오틱스"]
+    },
+    {
+      "id": 23,
+      "product_name": "리얼트루 식물성 오메가3",
+      "brand": "뉴네이처",
+      "grade": 4.8,
+      "repurchase_rate": 0.87,
+      "related": ["알티지 트루 오메가3", "코어 알티지 오메가3"]
+    },
+    {
+      "id": 24,
+      "product_name": "코어 대마종자유 햄프씨드 오일",
+      "brand": "머거요",
+      "grade": 4.9,
+      "repurchase_rate": 0.33,
+      "related": ["위 건강엔 헬리코박터 컨트롤", "더블유 프로바이오틱스"]
+    },
+    {
+      "id": 25,
+      "product_name": "알티지 오메가3 파워 1400",
+      "brand": "뉴네이처",
+      "grade": 4.8,
+      "repurchase_rate": 0.92,
+      "related": ["더블케어 발효 효소", "포스트바이오틱스 100억 패밀리 프로바이오틱스 유산균"]
+    },
+    {
+      "id": 26,
+      "product_name": "센스밸런스",
+      "brand": "유한양행",
+      "grade": 4.8,
+      "repurchase_rate": 0.72,
+      "related": ["엠비피 MBP", "감태잠태"]
+    },
+    {
+      "id": 27,
+      "product_name": "더다른 식물성 알티지 오메가3",
+      "brand": "닥터프리오",
+      "grade": 4.7,
+      "repurchase_rate": 0.84,
+      "related": ["엘레나 UREX 프로바이오틱스", "엠비피 MBP"]
+    },
+    {
+      "id": 28,
+      "product_name": "브레인 업 안심 포스파티딜세린",
+      "brand": "모어네이처",
+      "grade": 4.7,
+      "repurchase_rate": 0.24,
+      "related": ["어린이면역 프로바이오틱스 유산균", "인지력에 좋은 포스파티딜세린"]
+    },
+    {
+      "id": 29,
+      "product_name": "마이시톨",
+      "brand": "마이시톨",
+      "grade": 4.8,
+      "repurchase_rate": 0.25,
+      "related": ["얼라이브 원스데일리 포 우먼", "튼튼애 콘드로이친"]
+    },
+    {
+      "id": 30,
+      "product_name": "베베 & 키즈 우리아이 멀티비타민 ",
+      "brand": "락티브",
+      "grade": 4.8,
+      "repurchase_rate": 0.42,
+      "related": ["커트 큐브", "아르맨 L-아르기닌"]
+    },
+    {
+      "id": 31,
+      "product_name": "더블유 프로바이오틱스",
+      "brand": "퍼펙트바이오틱스",
+      "grade": 4.7,
+      "repurchase_rate": 0.53,
+      "related": ["멀티 구미", "베이비 프로바이오틱스 프리미엄"]
+    },
+    {
+      "id": 32,
+      "product_name": "아르기닌 10000",
+      "brand": "비타민마을",
+      "grade": 4.8,
+      "repurchase_rate": 0.56,
+      "related": ["초임계 알티지 오메가3", "멀티비타민 미네랄"]
+    },
+    {
+      "id": 33,
+      "product_name": "식물성 대마종자유",
+      "brand": "모어네이처",
+      "grade": 4.8,
+      "repurchase_rate": 0.61,
+      "related": ["아르기닌 10000", "락티움 플러스"]
+    },
+    {
+      "id": 34,
+      "product_name": "대마종자유 프리미엄",
+      "brand": "오지아이",
+      "grade": 4.7,
+      "repurchase_rate": 0.72,
+      "related": ["코어 대마종자유 햄프씨드 오일", "퓨어 알티지 오메가3"]
+    },
+    {
+      "id": 35,
+      "product_name": "덴마크 유산균 이야기",
+      "brand": "덴프스",
+      "grade": 4.7,
+      "repurchase_rate": 0.83,
+      "related": ["키즈 멀티비타민 미네랄", "위 건강엔 작약"]
+    },
+    {
+      "id": 36,
+      "product_name": "바이탈 프리미엄 프로바이오틱스 유산균",
+      "brand": "뉴네이처",
+      "grade": 4.8,
+      "repurchase_rate": 0.94,
+      "related": ["생유산균 골드", "위건강엔 매스틱"]
+    },
+    {
+      "id": 37,
+      "product_name": "감태잠태",
+      "brand": "온궁민건강프로젝트",
+      "grade": 4.4,
+      "repurchase_rate": 0.21,
+      "related": ["초임계 알티지 오메가3", "알티지 오메가3 듀얼"]
+    },
+    {
+      "id": 38,
+      "product_name": "이뮨 프로바이오틱스",
+      "brand": "퍼펙트바이오틱스",
+      "grade": 4.9,
+      "repurchase_rate": 0.32,
+      "related": ["더블유 프로바이오틱스", "포스트바이오틱스 100억 패밀리 프로바이오틱스 유산균"]
+    },
+    {
+      "id": 39,
+      "product_name": "프리미엄 초유 단백질 콜라겐 분말",
+      "brand": "멜로우네이쳐",
+      "grade": 4.9,
+      "repurchase_rate": 0.43,
+      "related": ["대마종자유 프리미엄", "6년근고려홍삼정스틱"]
+    },
+    {
+      "id": 40,
+      "product_name": "퓨어 알티지 오메가3",
+      "brand": "유유제약",
+      "grade": 4.8,
+      "repurchase_rate": 0.54,
+      "related": ["트루바이타민", "다이어트 유산균"]
+    },
+    {
+      "id": 41,
+      "product_name": "생유산균 코어",
+      "brand": "락토핏",
+      "grade": 4.7,
+      "repurchase_rate": 0.65,
+      "related": ["대마종자유 프리미엄", "종합비타민 멀티미네랄15"]
+    },
+    {
+      "id": 42,
+      "product_name": "베이비 프로바이오틱스 프리미엄",
+      "brand": "프로스랩",
+      "grade": 4.7,
+      "repurchase_rate": 0.76,
+      "related": ["마그네슘정", "프리미엄 초유 단백질 콜라겐 분말"]
+    },
+    {
+      "id": 43,
+      "product_name": "포스트바이오틱스",
+      "brand": "뉴네이처",
+      "grade": 4.8,
+      "repurchase_rate": 0.87,
+      "related": ["브레인 업 안심 포스파티딜세린", "초임계 식물성 알티지 오메가3"]
+    },
+    {
+      "id": 44,
+      "product_name": "멀티비타민 올인원",
+      "brand": "고려은단",
+      "grade": 4.8,
+      "repurchase_rate": 0.98,
+      "related": ["마그네슘정", "실버 포 우먼 멀티비타민 미네랄"]
+    },
+    {
+      "id": 45,
+      "product_name": "관절엔 콘드로이친",
+      "brand": "콜마비앤에이치",
+      "grade": 4.7,
+      "repurchase_rate": 0.1,
+      "related": ["WCS 햄프 대마종자유", "초임계 식물성 알티지 오메가3"]
+    },
+    {
+      "id": 46,
+      "product_name": "알티지 트루 오메가3",
+      "brand": "비타민마을",
+      "grade": 4.8,
+      "repurchase_rate": 0.21,
+      "related": ["포맨 멀티 비타민 미네랄", "핑크 프로바이오틱스"]
+    },
+    {
+      "id": 47,
+      "product_name": "어린이면역 프로바이오틱스 유산균",
+      "brand": "바료랑",
+      "grade": 4.8,
+      "repurchase_rate": 0.32,
+      "related": ["포스파티딜세린+징코", "하이퍼맥스 L 아르기닌"]
+    },
+    {
+      "id": 48,
+      "product_name": "위건강엔 매스틱",
+      "brand": "프롬바이오",
+      "grade": 4.7,
+      "repurchase_rate": 0.43,
+      "related": ["포스트바이오틱스", "베이비 프로바이오틱스 프리미엄"]
+    },
+    {
+      "id": 49,
+      "product_name": "헤모힘",
+      "brand": "애터미",
+      "grade": 4.8,
+      "repurchase_rate": 0.54,
+      "related": ["수면건강엔 락티움 플러스", "더블유 프로바이오틱스"]
+    },
+    {
+      "id": 50,
+      "product_name": "포스트바이오틱스 프로바이오틱스 생 유산균",
+      "brand": "팜엔탑",
+      "grade": 4.6,
+      "repurchase_rate": 0.65,
+      "related": ["오메가써큐텐 ", "핑크 프로바이오틱스"]
+    },
+    {
+      "id": 51,
+      "product_name": "편안한 34종 자연발효 곡물효소 유산균",
+      "brand": "우리유산균",
+      "grade": 4.7,
+      "repurchase_rate": 0.76,
+      "related": ["대마종자유 프리미엄", "감태잠태"]
+    },
+    {
+      "id": 52,
+      "product_name": "키즈 멀티비타민 미네랄",
+      "brand": "뉴트리코어",
+      "grade": 4.7,
+      "repurchase_rate": 0.87,
+      "related": ["유어피엔티 위 건강", "더다른 식물성 알티지 오메가3"]
+    },
+    {
+      "id": 53,
+      "product_name": "프롤린 모유 생유산균 포스트바이오틱스",
+      "brand": "순수식품",
+      "grade": 4.6,
+      "repurchase_rate": 0.98,
+      "related": ["더블케어 발효 효소", "멀티비타민 앤 미네랄"]
+    },
+    {
+      "id": 54,
+      "product_name": "네이처락 포스트 바이오틱스 메가",
+      "brand": "팔레오",
+      "grade": 4.7,
+      "repurchase_rate": 0.11,
+      "related": ["바이탈 프리미엄 프로바이오틱스 유산균", "이노시톨 98%"]
+    },
+    {
+      "id": 55,
+      "product_name": "콜린 이노시톨",
+      "brand": "피토틱스",
+      "grade": 4.8,
+      "repurchase_rate": 0.22,
+      "related": ["알티지 오메가3 파워 1400", "네이처락 포스트 바이오틱스 메가"]
+    },
+    {
+      "id": 56,
+      "product_name": "인지력에 좋은 포스파티딜세린",
+      "brand": "팜엔탑",
+      "grade": 4.7,
+      "repurchase_rate": 0.33,
+      "related": ["프리미엄 대마종자유", "알티지 오메가3 시그니처"]
+    },
+    {
+      "id": 57,
+      "product_name": "락티움 플러스",
+      "brand": "온궁민건강프로젝트",
+      "grade": 4.5,
+      "repurchase_rate": 0.05,
+      "related": ["더블유 프로바이오틱스", "트루바이타민"]
+    },
+    {
+      "id": 58,
+      "product_name": "멀티비타민미네랄",
+      "brand": "포뉴",
+      "grade": 4.8,
+      "repurchase_rate": 0.44,
+      "related": ["더맘스", "WCS 햄프 대마종자유"]
+    },
+    {
+      "id": 59,
+      "product_name": "패밀리 프로바이오틱스 프리미엄",
+      "brand": "프로스랩",
+      "grade": 4.7,
+      "repurchase_rate": 0.55,
+      "related": ["이노시톨 98%", "식물성 알티지 오메가3 DHA 맥스"]
+    },
+    {
+      "id": 60,
+      "product_name": "위 건강엔 헬리코박터 컨트롤",
+      "brand": "팜엔탑",
+      "grade": 4.6,
+      "repurchase_rate": 0.66,
+      "related": ["덴마크 유산균 이야기", "수면엔 락티움"]
+    },
+    {
+      "id": 61,
+      "product_name": "포스트바이오틱스 100억 패밀리 프로바이오틱스 유산균",
+      "brand": "포뉴",
+      "grade": 4.8,
+      "repurchase_rate": 0.77,
+      "related": ["리본 프로바이오틱스", "센스밸런스"]
+    },
+    {
+      "id": 62,
+      "product_name": "엠비피 MBP",
+      "brand": "뼈엔",
+      "grade": 4.7,
+      "repurchase_rate": 0.88,
+      "related": ["종합비타민 멀티미네랄15", "알티지 트루 오메가3"]
+    },
+    {
+      "id": 63,
+      "product_name": "알티지오메가3",
+      "brand": "익스트림",
+      "grade": 4.9,
+      "repurchase_rate": 0.99,
+      "related": ["퓨어 알티지 오메가3", "헤브리데이 누룽지 곡물발효 헤브효소"]
+    },
+    {
+      "id": 64,
+      "product_name": "L-아르기닌",
+      "brand": "해외나우푸드",
+      "grade": 4.8,
+      "repurchase_rate": 0.14,
+      "related": ["기억엔", "종합비타민 멀티미네랄15"]
+    },
+    {
+      "id": 65,
+      "product_name": "WCS 햄프 대마종자유",
+      "brand": "뉴트리코어",
+      "grade": 4.7,
+      "repurchase_rate": 0.25,
+      "related": ["커트 큐브", "생유산균 코어"]
+    },
+    {
+      "id": 66,
+      "product_name": "슬림 프로바이오틱스",
+      "brand": "프로스랩",
+      "grade": 4.5,
+      "repurchase_rate": 0.04,
+      "related": ["멀티비타민 미네랄", "수면엔 락티움"]
+    },
+    {
+      "id": 67,
+      "product_name": "더맘스",
+      "brand": "뉴트리코어",
+      "grade": 4.7,
+      "repurchase_rate": 0.36,
+      "related": ["포스트바이오틱스 프로바이오틱스 생 유산균", "위건강엔 매스틱"]
+    },
+    {
+      "id": 68,
+      "product_name": "생유산균 로얄",
+      "brand": "락토핏",
+      "grade": 4.8,
+      "repurchase_rate": 0.47,
+      "related": ["관절팔팔", "브레인 업 안심 포스파티딜세린"]
+    },
+    {
+      "id": 69,
+      "product_name": "포스파티딜세린+징코",
+      "brand": "더리얼",
+      "grade": 4.8,
+      "repurchase_rate": 0.58,
+      "related": ["위 건강엔 작약", "엘레나 UREX 프로바이오틱스"]
+    },
+    {
+      "id": 70,
+      "product_name": "기억엔",
+      "brand": "온궁민건강프로젝트",
+      "grade": 4.5,
+      "repurchase_rate": 0.43,
+      "related": ["코어 알티지 오메가3", "관절엔 콘드로이친"]
+    },
+    {
+      "id": 71,
+      "product_name": "알티지 오메가3 듀얼",
+      "brand": "프로메가",
+      "grade": 4.8,
+      "repurchase_rate": 0.69,
+      "related": ["리본 프로바이오틱스", "멀티비타민 앤 미네랄"]
+    },
+    {
+      "id": 72,
+      "product_name": "트루바이타민",
+      "brand": "덴프스",
+      "grade": 4.8,
+      "repurchase_rate": 0.7,
+      "related": ["멀티비타민 미네랄", "핑크 프로바이오틱스"]
+    },
+    {
+      "id": 74,
+      "product_name": "자로우 매스틱 검",
+      "brand": "재로우포뮬러스",
+      "grade": 4.8,
+      "repurchase_rate": 0.81,
+      "related": ["포스파티딜세린+징코", "딥슬립 락티움"]
+    },
+    {
+      "id": 75,
+      "product_name": "리본 프로바이오틱스",
+      "brand": "닥터힐유",
+      "grade": 4.7,
+      "repurchase_rate": 0.92,
+      "related": ["프리미엄 대마종자유", "멀티비타민 올인원"]
+    },
+    {
+      "id": 76,
+      "product_name": "식물성 알티지 오메가3",
+      "brand": "뉴트리코어",
+      "grade": 4.7,
+      "repurchase_rate": 0.23,
+      "related": ["다이어트 유산균", "더다른 식물성 알티지 오메가3"]
+    },
+    {
+      "id": 77,
+      "product_name": "수면건강엔 락티움 플러스",
+      "brand": "프롬바이오",
+      "grade": 4.5,
+      "repurchase_rate": 0.34,
+      "related": ["기억엔", "기억엔"]
+    },
+    {
+      "id": 78,
+      "product_name": "이뮨",
+      "brand": "해외오쏘몰",
+      "grade": 4.8,
+      "repurchase_rate": 0.45,
+      "related": ["핑크 프로바이오틱스", "더블케어 발효 효소"]
+    },
+    {
+      "id": 79,
+      "product_name": "더블케어 발효 효소",
+      "brand": "비타민마을",
+      "grade": 4.8,
+      "repurchase_rate": 0.56,
+      "related": ["리본 프로바이오틱스", "콜린 이노시톨"]
+    },
+    {
+      "id": 80,
+      "product_name": "지노 마스터",
+      "brand": "마스터바이옴",
+      "grade": 4.7,
+      "repurchase_rate": 0.67,
+      "related": ["관절통쾌", "프롤린 모유 생유산균 포스트바이오틱스"]
+    },
+    {
+      "id": 81,
+      "product_name": "헤브리데이 누룽지 곡물발효 헤브효소",
+      "brand": "휴엔바이오",
+      "grade": 4.9,
+      "repurchase_rate": 0.78,
+      "related": ["더블케어 발효 효소", "포스트바이오틱스"]
+    },
+    {
+      "id": 82,
+      "product_name": "엘레나 UREX 프로바이오틱스",
+      "brand": "유한양행",
+      "grade": 4.8,
+      "repurchase_rate": 0.81,
+      "related": ["튼튼애 콘드로이친", "이뮨 프로바이오틱스"]
+    },
+    {
+      "id": 83,
+      "product_name": "아르맨 L-아르기닌",
+      "brand": "웰릿",
+      "grade": 4.6,
+      "repurchase_rate": 0.37,
+      "related": ["이뮨 프로바이오틱스", "알티지 트루 오메가3"]
+    },
+    {
+      "id": 84,
+      "product_name": "수면엔 락티움",
+      "brand": "뉴트리코어",
+      "grade": 4.5,
+      "repurchase_rate": 0.27,
+      "related": ["감태잠태", "멀티비타민 미네랄"]
+    },
+    {
+      "id": 85,
+      "product_name": "유어피엔티 위 건강",
+      "brand": "잠백이",
+      "grade": 4.8,
+      "repurchase_rate": 0.34,
+      "related": ["센스밸런스", "더블케어 발효 효소"]
+    },
+    {
+      "id": 86,
+      "product_name": "다이어트 유산균",
+      "brand": "비에날씬",
+      "grade": 4.7,
+      "repurchase_rate": 0.49,
+      "related": ["포스파티딜세린+징코", "베이비 프로바이오틱스 프리미엄"]
+    },
+    {
+      "id": 87,
+      "product_name": "포맨 멀티 비타민 미네랄",
+      "brand": "센트룸",
+      "grade": 4.8,
+      "repurchase_rate": 0.74,
+      "related": ["초임계 식물성 알티지 오메가3", "마이시톨"]
+    },
+    {
+      "id": 88,
+      "product_name": "이노시톨 98%",
+      "brand": "순수식품",
+      "grade": 4.9,
+      "repurchase_rate": 0.59,
+      "related": ["딥슬립 락티움", "어린이면역 프로바이오틱스 유산균"]
+    },
+    {
+      "id": 89,
+      "product_name": "얼라이브 원스데일리 포 우먼",
+      "brand": "네츄럴라이프얼라이브",
+      "grade": 4.8,
+      "repurchase_rate": 0.93,
+      "related": ["패밀리 프로바이오틱스 프리미엄", "슬림 프로바이오틱스"]
+    },
+    {
+      "id": 90,
+      "product_name": "멀티 구미",
+      "brand": "센트룸",
+      "grade": 4.9,
+      "repurchase_rate": 0.86,
+      "related": ["자로우 매스틱 검", "피토틱스 옐로우"]
+    },
+    {
+      "id": 91,
+      "product_name": "위 건강엔 작약",
+      "brand": "뉴트리코어",
+      "grade": 4.7,
+      "repurchase_rate": 0.41,
+      "related": ["엘레나 UREX 프로바이오틱스", "알티지 오메가3 시그니처"]
+    },
+    {
+      "id": 92,
+      "product_name": "알티지 오메가3 시그니처",
+      "brand": "미완성프로젝트",
+      "grade": 4.8,
+      "repurchase_rate": 0.52,
+      "related": ["WCS 햄프 대마종자유", "멀티비타민 올인원"]
+    },
+    {
+      "id": 93,
+      "product_name": "닥터스노트 슈퍼플러스 홍국 알티지",
+      "brand": "팔레오",
+      "grade": 5,
+      "repurchase_rate": 0.87,
+      "related": ["베이비 프로바이오틱스 프리미엄", "기억엔"]
+    },
+    {
+      "id": 94,
+      "product_name": "실버 포 우먼 멀티비타민 미네랄",
+      "brand": "센트룸",
+      "grade": 4.8,
+      "repurchase_rate": 0.92,
+      "related": ["베베 & 키즈 우리아이 멀티비타민 ", "초유 단백질"]
+    },
+    {
+      "id": 95,
+      "product_name": "마이크로바이옴 포스트바이오틱스",
+      "brand": "GC녹십자",
+      "grade": 4.7,
+      "repurchase_rate": 0.86,
+      "related": ["엠비피 MBP", "베베 & 키즈 우리아이 멀티비타민 "]
+    },
+    {
+      "id": 96,
+      "product_name": "관절통쾌",
+      "brand": "종근당건강",
+      "grade": 4.8,
+      "repurchase_rate": 0.75,
+      "related": ["패밀리 프로바이오틱스 프리미엄", "식물성 대마종자유"]
+    },
+    {
+      "id": 97,
+      "product_name": "관절팔팔",
+      "brand": "씨스팡",
+      "grade": 4.7,
+      "repurchase_rate": 0.54,
+      "related": ["다이어트 유산균", "초임계 알티지 오메가3"]
+    },
+    {
+      "id": 98,
+      "product_name": "초유 단백질",
+      "brand": "팔레오",
+      "grade": 4.7,
+      "repurchase_rate": 0.49,
+      "related": ["프롤린 모유 생유산균 포스트바이오틱스", "콜린 이노시톨"]
+    },
+    {
+      "id": 99,
+      "product_name": "튼튼애 콘드로이친",
+      "brand": "마음가짐",
+      "grade": 4.7,
+      "repurchase_rate": 0.38,
+      "related": ["슬림 프로바이오틱스", "어린이면역 프로바이오틱스 유산균"]
+    },
+    {
+      "id": 100,
+      "product_name": "딥슬립 락티움",
+      "brand": "닥터린",
+      "grade": 4.6,
+      "repurchase_rate": 0.27,
+      "related": ["포스트바이오틱스 프로바이오틱스 생 유산균", "멀티비타민미네랄"]
+    }
   ]
 }

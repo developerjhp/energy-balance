@@ -31,21 +31,24 @@ function ItemList({ order, setOrder, data, input, inputFocused, searched, matche
 
   return (
     <div className={'item-list' + (inputFocused ? ' active' : '')}>
-      <p>최근 검색어</p>
-
+      <div className='section'>
+        <p>최근 검색어</p>
+      </div>
       {searched.map((item) => {
         return <Searched order={order} data={data} key={item} searchedName={item} setInput={setInput} setMatches={setMatches} />;
       })}
 
-      <p>일치하는 제품 ({order}이 높은 순)</p>
-      <div>
-        {orderCondition.map((order) => {
-          return (
-            <button key={order} onClick={onClickHandler(order)}>
-              {order}
-            </button>
-          );
-        })}
+      <div className='section'>
+        <p>일치하는 제품 ({order}이 높은 순)</p>
+        <div className='condition-list'>
+          {orderCondition.map((order) => {
+            return (
+              <button key={order} onClick={onClickHandler(order)}>
+                {order}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {matches.map((item) => {

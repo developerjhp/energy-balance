@@ -37,21 +37,22 @@ function Search() {
     }
   }, []);
   useEffect(() => {
-    console.log(input);
+    inputRef.current?.focus();
   }, [input]);
-  //   useEffect(() => {
-  //     const focusFalse = (e: any) => {
-  //       if (inputFocused && e.target !== inputRef.current) {
-  //         console.log('here');
-  //         setInputFocused(false);
-  //       }
-  //     };
-  //     window.addEventListener('click', focusFalse);
 
-  //     return () => {
-  //       window.removeEventListener('click', focusFalse);
-  //     };
-  //   }, [inputFocused]);
+  useEffect(() => {
+    const focusFalse = (e: any) => {
+      if (inputFocused && e.target !== inputRef.current) {
+        console.log('here');
+        setInputFocused(false);
+      }
+    };
+    window.addEventListener('click', focusFalse);
+
+    return () => {
+      window.removeEventListener('click', focusFalse);
+    };
+  }, [inputFocused]);
 
   useEffect(() => {
     window.localStorage.setItem('searched', JSON.stringify(searched));

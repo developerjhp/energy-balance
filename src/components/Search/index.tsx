@@ -4,6 +4,8 @@ import axios from 'axios';
 import { db, dbArr } from 'types/db';
 import './style.scss';
 import SearchInput from './SearchInput';
+import ProductCard from './ProductCard';
+import { dataFilter } from 'utils/functions/dataFilter';
 
 function Search() {
   const [data, setData] = useState<dbArr>([]);
@@ -13,11 +15,25 @@ function Search() {
   const [inputFocused, setInputFocused] = useState(false);
   const [input, setInput] = useState<string>('');
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const [searchData, setSearchData] = useState([
+    {
+      id: 0,
+      product_name: '',
+      brand: '',
+      grade: 0,
+      repurchase_rate: 0,
+      related: [''],
+    },
+  ]);
+
+  const currentUrl = window.location.search;
+  const searchValue = decodeURI(currentUrl).split('?=')[1];
 
   useEffect(() => {
     axios('db.json')
       .then((res) => {
         setData(res.data.data);
+        setSearchData(dataFilter(res.data.data, searchValue));
         return res.data.data;
       })
       .then((data) => {
@@ -56,6 +72,10 @@ function Search() {
     window.localStorage.setItem('searched', JSON.stringify(searched));
   }, [searched]);
 
+  useEffect(() => {
+    console.log(searchData);
+  });
+
   return (
     <div className='search-tool'>
       <SearchInput
@@ -72,6 +92,11 @@ function Search() {
         matches={matches}
         setMatches={setMatches}
       />
+      <div className='card-wrap'>
+        {searchData.map((el, idx) => {
+         return  <ProductCard info={el} key={idx}/>
+        })}
+      </div>
     </div>
   );
 }

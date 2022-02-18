@@ -1,4 +1,4 @@
-<h1 align= "center"> 에너지 밸런스 검색</h1>
+<h1 align= "center"> 에너지 밸런스</h1>
 
 ### :house: 배포 URL
 

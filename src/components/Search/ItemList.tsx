@@ -6,18 +6,9 @@ import { orderCondition } from 'utils/constants/order';
 import { useCallback } from 'react';
 import { dataFilter } from 'utils/functions/dataFilter';
 import { dataSortingSlice } from 'utils/functions/dataSortingSlice';
-interface Props {
-  order: string;
-  setOrder: Dispatch<any>;
-  data: dbArr;
-  input: string;
-  inputFocused: boolean;
-  searched: string[];
-  matches: dbArr;
-  setInput: Dispatch<any>;
-  setMatches: Dispatch<any>;
-}
-function ItemList({ order, setOrder, data, input, inputFocused, searched, matches, setInput, setMatches }: Props) {
+import { Props } from 'types/props';
+
+function ItemList({ setInputFocused, order, setOrder, data, input, inputFocused, searched, matches, setInput, setMatches }: Props) {
   const onClickHandler = useCallback(
     (condition: string) => (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
@@ -27,7 +18,7 @@ function ItemList({ order, setOrder, data, input, inputFocused, searched, matche
       let match: dbArr = dataFilter(data, input);
       setMatches([...dataSortingSlice(match, condition)]);
     },
-    [data, setOrder, setMatches, input]
+    [data, setOrder, setMatches, input, inputFocused, setInputFocused]
   );
 
   return (

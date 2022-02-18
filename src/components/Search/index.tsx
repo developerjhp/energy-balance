@@ -4,13 +4,11 @@ import axios from 'axios';
 import { db, dbArr } from 'types/db';
 import './style.scss';
 import SearchInput from './SearchInput';
-import ItemList from './ItemList';
 
 function Search() {
   const [data, setData] = useState<dbArr>([]);
   const [searched, setSearched] = useState<string[]>([]);
   const [matches, setMatches] = useState<dbArr>([]);
-  const [related, setRelated] = useState<dbArr>([]);
   const [order, setOrder] = useState<string>('재구매율');
   const [inputFocused, setInputFocused] = useState(false);
   const [input, setInput] = useState<string>('');

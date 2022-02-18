@@ -37,8 +37,9 @@ function Search() {
     }
   }, []);
   useEffect(() => {
-    console.log(input);
+    inputRef.current?.focus();
   }, [input]);
+
   //   useEffect(() => {
   //     const focusFalse = (e: any) => {
   //       if (inputFocused && e.target !== inputRef.current) {

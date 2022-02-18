@@ -3,6 +3,7 @@ import { dataFilter } from 'utils/functions/dataFilter';
 import { dataSortingSlice } from 'utils/functions/dataSortingSlice';
 import { dbArr } from 'types/db';
 import ItemList from 'components/Search/ItemList';
+import { useEffect } from 'react';
 interface Props {
   data: dbArr;
   order: string;

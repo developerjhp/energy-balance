@@ -33,6 +33,7 @@
     border: none;
     background-color: #fff;
     cursor: pointer;
+    margin-left: auto;
   }
 }
 
@@ -50,6 +51,7 @@
 }
 
 .item-name {
+  cursor: pointer;
   &:hover {
     background-color: aquamarine;
   }

@@ -36,19 +36,22 @@ function Search() {
       setSearched([...JSON.parse(window.localStorage.getItem('searched')!)]);
     }
   }, []);
-
   useEffect(() => {
-    const focusFalse = (e: any) => {
-      if (inputFocused && e.target !== inputRef.current) {
-        setInputFocused(false);
-      }
-    };
-    window.addEventListener('click', focusFalse);
+    console.log(input);
+  }, [input]);
+  //   useEffect(() => {
+  //     const focusFalse = (e: any) => {
+  //       if (inputFocused && e.target !== inputRef.current) {
+  //         console.log('here');
+  //         setInputFocused(false);
+  //       }
+  //     };
+  //     window.addEventListener('click', focusFalse);
 
-    return () => {
-      window.removeEventListener('click', focusFalse);
-    };
-  }, [inputFocused]);
+  //     return () => {
+  //       window.removeEventListener('click', focusFalse);
+  //     };
+  //   }, [inputFocused]);
 
   useEffect(() => {
     window.localStorage.setItem('searched', JSON.stringify(searched));
@@ -59,6 +62,7 @@ function Search() {
       <SearchInput
         ref={inputRef}
         order={order}
+        setOrder={setOrder}
         data={data}
         inputFocused={inputFocused}
         setInputFocused={setInputFocused}
@@ -69,7 +73,6 @@ function Search() {
         matches={matches}
         setMatches={setMatches}
       />
-      <ItemList order={order} data={data} inputFocused={inputFocused} searched={searched} matches={matches} setInput={setInput} setMatches={setMatches} />
     </div>
   );
 }

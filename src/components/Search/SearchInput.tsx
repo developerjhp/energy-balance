@@ -16,27 +16,42 @@ const SearchInput = forwardRef<HTMLInputElement, Props>(({ data, input, setInput
   const onChangeHandler = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setInput(e.target.value);
-      console.log(input);
-      setMatches([
-        ...data.filter((item) => {
-          const regex = new RegExp(e.target.value, 'gi');
-          return item.product_name.match(regex);
-        }),
-      ]);
+      let match: dbArr = data.filter((item) => {
+        const regex = new RegExp(e.target.value, 'gi');
+        return item.product_name.match(regex);
+      });
+      if (match.length === 0) {
+        setMatches(
+          [
+            ...data.sort((a, b) => {
+              return b.repurchase_rate - a.repurchase_rate;
+            }),
+          ].slice(0, 5)
+        );
+      } else {
+        setMatches(
+          match
+            .sort((a, b) => {
+              return b.repurchase_rate - a.repurchase_rate;
+            })
+            .slice(0, 5)
+        );
+      }
     },
     [input]
   );
   const submitHandler = (e: React.FormEvent) => {
     e.preventDefault();
     if (input.length !== 0) {
-      setSearched([...searched, input]);
+      setSearched([input, ...searched.slice(0, 4)]);
+
       setInput('');
     }
+    setInputFocused(true);
   };
 
   const focusInput = useCallback(() => {
     setInputFocused(true);
-    console.log(inputFocused);
   }, [inputFocused]);
   return (
     <div className='search-input-container'>

@@ -1,0 +1,9 @@
+{
+  "data": [
+    { "id": 1, "product_name": "6년근고려홍삼정스틱", "brand": "", "grade": 4.0, "repurchase_rate": 0.9, "related": ["커트 큐브", "비타민D 1000IU"] },
+    { "id": 2, "product_name": "마그네슘정", "brand": "", "grade": 4.2, "repurchase_rate": 0.88, "related": ["6년근고려홍삼정스틱", "비타민D 키즈"] },
+    { "id": 3, "product_name": "비타민D 1000IU", "brand": "", "grade": 4.6, "repurchase_rate": 0.3, "related": ["비타민D 1080 IU", "비타민D 키즈"] },
+    { "id": 4, "product_name": "커트 큐브", "brand": "", "grade": 4.0, "repurchase_rate": 0.8, "related": ["6년근고려홍삼정스틱", "마그네슘정"] },
+    { "id": 5, "product_name": "코코몽키즈오메가", "brand": "일양약품", "grade": 4.9, "repurchase_rate": 0.92, "related": ["커트 큐브", "비타민D 키즈"] }
+  ]
+}

@@ -15,11 +15,28 @@ function Search() {
   const [inputFocused, setInputFocused] = useState(false);
   const [input, setInput] = useState<string>('');
   const inputRef = useRef<HTMLInputElement | null>(null);
+
   useEffect(() => {
-    axios('db.json').then((res) => {
-      setData(res.data.data);
-    });
+    axios('db.json')
+      .then((res) => {
+        setData(res.data.data);
+        return res.data.data;
+      })
+      .then((data) => {
+        setMatches(
+          [
+            ...data.sort((a: db, b: db) => {
+              return b.repurchase_rate - a.repurchase_rate;
+            }),
+          ].slice(0, 5)
+        );
+      });
+
+    if ('searched' in window.localStorage) {
+      setSearched([...JSON.parse(window.localStorage.getItem('searched')!)]);
+    }
   }, []);
+
   useEffect(() => {
     const focusFalse = (e: any) => {
       if (inputFocused && e.target !== inputRef.current) {
@@ -36,6 +53,7 @@ function Search() {
   useEffect(() => {
     window.localStorage.setItem('searched', JSON.stringify(searched));
   }, [searched]);
+
   return (
     <div className='search-tool'>
       <SearchInput

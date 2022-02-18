@@ -20,6 +20,7 @@ interface Props {
 function ItemList({ order, setOrder, data, input, inputFocused, searched, matches, setInput, setMatches }: Props) {
   const onClickHandler = useCallback(
     (condition: string) => (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
       console.log(condition);
       setOrder(condition);
 
